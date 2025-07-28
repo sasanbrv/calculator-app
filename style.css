@@ -1,0 +1,128 @@
+@font-face {
+    font-family: specimen;
+    src: url(https://fonts.google.com/specimen/League+Spartan);
+}
+
+:root{
+    --bg-color: hsl(222, 26%, 31%);
+    --circle-bg: hsl(6, 63%, 50%);
+    --header-color: white;
+    --screen-bg : hsl(224, 36%, 15%);
+    --keboard-bg : hsl(223, 31%, 20%);
+    --keboard-btn : hsl(0, 0%, 90%);
+    --keyboard-shadow: hsl(28, 16%, 65%);
+    --keyboard-text: hsl(221, 14%, 31%);
+    --keboard-btn-hover : white ; 
+    --del-btn : hsl(225, 21%, 49%);
+    --del-shadow: hsl(224, 28%, 35%); 
+    --del-text: white;
+    --del-hover : hsl(224, 49%, 48%);
+    --equal-btn: hsl(6, 63%, 50%); 
+    --equal-shadow: hsl(6, 70%, 34%); 
+    --equal-text: white; 
+    --equal-hover: hsl(6, 89%, 41%); 
+
+}
+
+body.theme-two{
+    --bg-color: hsl(0, 0%, 90%);
+    --circle-bg: hsl(25, 98%, 40%);
+    --header-color: black;
+    --screen-bg : hsl(0, 0%, 93%);
+    --keboard-bg : hsl(0, 5%, 81%);
+    --keboard-btn : hsl(0, 0%, 90%);
+    --keyboard-shadow: hsl(35, 11%, 61%);
+    --keyboard-text: hsl(60, 10%, 19%);
+    --keboard-btn-hover : white ; 
+    --del-btn : hsl(185, 42%, 37%);
+    --del-shadow: hsl(185, 58%, 25%); 
+    --del-text: hsl(0, 100%, 100%);
+    --del-hover : hsl(185, 85%, 18%);
+    --equal-btn: hsl(25, 98%, 40%); 
+    --equal-shadow: hsl(25, 99%, 27%); 
+    --equal-text: hsl(0, 100%, 100%); 
+    --equal-hover: hsl(25, 99%, 27%);
+}
+
+body.theme-three {
+    --bg-color: hsl(268, 75%, 9%);
+    --circle-bg: hsl(176, 100%, 44%);
+    --header-color: hsl(52, 100%, 62%);
+    --screen-bg : hsl(268, 71%, 12%);
+    --keboard-bg : hsl(268, 71%, 12%);
+    --keboard-btn : hsl(281, 89%, 26%);
+    --keyboard-shadow: hsl(285, 91%, 52%);
+    --keyboard-text: hsl(52, 100%, 62%);
+    --keboard-btn-hover : hsl(281, 85%, 47%); 
+    --del-btn : hsl(268, 47%, 21%);
+    --del-shadow: hsl(290, 70%, 36%); 
+    --del-text: hsl(0, 100%, 100%);
+    --del-hover : hsl(268, 64%, 37%);
+    --equal-btn: hsl(176, 100%, 44%); 
+    --equal-shadow: hsl(177, 92%, 70%); 
+    --equal-text: hsl(0, 100%, 100%); 
+    --equal-hover: hsl(176, 100%, 38%);
+}
+body{
+    font-family: specimen;
+    background-color: var(--bg-color);
+}
+.circle-btn{
+    background-color: var(--circle-bg);
+}
+.header{
+    color: var(--header-color);
+}
+.screen{
+    background-color: var(--screen-bg);
+    height: 10%;
+    border-radius: 10px;
+}
+
+.keyboard{
+    background-color: var(--keboard-bg);
+    height: 50%;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    height: 100%;
+    margin: auto;
+}
+
+.keyboard button{
+    background-color: var(--keboard-btn) ; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px var(--keyboard-shadow) ;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--keyboard-text);
+}
+
+.keyboard button:hover {
+    background-color: var(--keboard-btn-hover);
+}
+
+#delBtn , #resetBtn{
+    background-color: var(--del-btn);
+    box-shadow: 0px 2px 2px var(--del-shadow);
+    color: var(--del-text);
+}
+#delBtn:hover , #resetBtn:hover{
+    background-color: var(--del-hover);
+}
+
+#equalBtn {
+    background-color: var(--equal-btn);
+    box-shadow: 0px 2px 2px var(--equal-shadow);
+    color: var(--equal-text);
+}
+
+#equalBtn:hover {
+    background-color: var(--equal-hover);
+}

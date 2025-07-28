@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <div class="container w-10/12 md:w-8/12 lg:w-4/12 ">
+        <div class="theme w-full flex justify-between header">
+                <h2 class=" font-bold text-lg">calc</h2>
+            <div class="flex">
+                <span class="mr-2">THEME</span>
+                <div class="">
+                    <button onclick="themeBtn(this)" class="circle-btn px-2 rounded-full" >1</button>
+                    <button onclick="themeBtn(this)" class="circle-btn px-2 rounded-full">2</button>
+                    <button onclick="themeBtn(this)" class="circle-btn px-2 rounded-full">3</button>
+                </div>
+                    
+            </div>
+        </div>
+        <div class="screen w-full header ">
+            <h2 class="flex innerText font-bold pl-3 h-full text-4xl items-center overflow-hidden"></h2>
+        </div>
+        <div class="keyboard w-full grid grid-rows-5 gap-4 p-5">
+            <div class="grid grid-cols-4 gap-4">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button id="delBtn" class="">del</button>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>+</button>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>-</button>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+                <button>.</button>
+                <button>0</button>
+                <button>/</button>
+                <button>*</button>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+                <button id="resetBtn" class="col-span-2 pb-2">reset</button>
+                <button id="equalBtn" class="col-span-2 pb-2">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
